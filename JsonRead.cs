@@ -1,19 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace resume_PDF
 {
-    internal class JSON
+    internal class JsonRead
     {
         //Defining Variables
         public static string firstname, lastname, profession, add1, add2, add3, phone, email, s1, s2, s3, s4, s5, l1, l2, l3, profile, we1, we2, we3, ed1, ed2, ed3;
-    }
-     public static void ReadJsonFile(string jsonFileIn)
+
+        public static void ReadJsonFile(string jsonFileIn)
         {
             //Reads the Json Text
             dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(jsonFileIn));
@@ -43,7 +43,5 @@ namespace resume_PDF
             ed2 = $"{jsonFile["education"]["education2"]}";
             ed3 = $"{jsonFile["education"]["education3"]}";
         }
-
     }
-
 }

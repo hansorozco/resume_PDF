@@ -51,6 +51,10 @@
             "PdfSharp": {
               "target": "Package",
               "version": "[1.50.5147, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

@@ -1,0 +1,42 @@
+{
+  "firstname": "Mark",
+  "lastname": "Supot",
+  "profession": "Programmer",
+
+  "address": {
+    "housenumber and streetname": "6000 tuwid street",
+    "city,state,zipcode": "Metro Manila 1234",
+    "country": "Philippines"
+  },
+
+  "phone": "09123456789",
+  "email": "joeberth@gmail.com",
+
+  "skills": {
+    "skill1": "C# Programming",
+    "skill2": "Python Programming",
+    "skill3": "Javascript Programming",
+    "skill4": "Web Development",
+    "skill5": "UI/UX Designing"
+  },
+
+  "languages": {
+    "language1": "Filipino",
+    "langiage2": "English",
+    "language3": "Bisaya"
+  },
+
+  "profile": "Ako ay may lobo, Lumipad sa langit, di ko na nakita, pinutukan na pala",
+
+  "work experience": {
+    "we1": "5 Years working with google's most advance machine learning project, alpha zero. (as a janitor)",
+    "we2": "2 Years head manager of apple sanitary branch.",
+    "we3": "2 Years experience on finishing a major project printing the text HelloWorld"
+  },
+
+  "education": {
+    "education1": "Bachelor of Party",
+    "education2": "PhD in Sleeping",
+    "education3": "Master in Chef"
+  }
+}
