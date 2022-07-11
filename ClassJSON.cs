@@ -1,31 +1,19 @@
-﻿using PdfSharp.Charting;
-using PdfSharp.Drawing;
-using PdfSharp.Drawing.Layout;
-using PdfSharp.Pdf;
-using System;
-using System.Diagnostics;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.IO;
-using System.Net;
-using System.Reflection;
-using static System.Net.Mime.MediaTypeNames;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
-
-namespace ResumePdf
+namespace resume_PDF
 {
-    class Program
+    internal class JSON
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("JSON to PDF Resume Maker");
-            //Calls the function to read jsonfile from the class JsonRead
-            JsonRead.ReadJsonFile(FileName());
-            //Calls the function to create pdf 
-            MakePdf();
-            Console.WriteLine("PDF Resume Successfully Created!");
-        }
-        public static void ReadJsonFile(string jsonFileIn)
+        //Defining Variables
+        public static string firstname, lastname, profession, add1, add2, add3, phone, email, s1, s2, s3, s4, s5, l1, l2, l3, profile, we1, we2, we3, ed1, ed2, ed3;
+    }
+     public static void ReadJsonFile(string jsonFileIn)
         {
             //Reads the Json Text
             dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(jsonFileIn));
@@ -57,4 +45,5 @@ namespace ResumePdf
         }
 
     }
+
 }
