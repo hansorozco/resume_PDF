@@ -1,6 +1,6 @@
 {
-  "firstname": "Mark",
-  "lastname": "Supot",
+  "firstname": "Joe",
+  "lastname": "Mama",
   "profession": "Programmer",
 
   "address": {
@@ -23,7 +23,7 @@
   "languages": {
     "language1": "Filipino",
     "langiage2": "English",
-    "language3": "Bisaya"
+    "language3": "Visaya"
   },
 
   "profile": "Ako ay may lobo, Lumipad sa langit, di ko na nakita, pinutukan na pala",
